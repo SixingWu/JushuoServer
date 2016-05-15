@@ -2,6 +2,7 @@ package azure.oxford.face; /**
  * Created by MebiuW on 16/4/23.
  */
 
+import azure.oxford.Configuration;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -15,7 +16,7 @@ import java.net.URI;
 
 public class EmotionDetection
 {
-    public static final String app_key="e705e16bddbd4aee9df4c0d54bfd46e8";
+    public static final String app_key= Configuration.app_key;
     public static String videoDetect(String url){
         HttpClient httpclient = HttpClients.createDefault();
         try

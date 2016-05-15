@@ -3,6 +3,7 @@ package azure.oxford.face;
  * Created by MebiuW on 16/4/23.
  */
 
+import azure.oxford.Configuration;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -16,7 +17,7 @@ import java.net.URI;
 
 public class FaceDetection
 {
-    public static final String app_key="d4daf96d2b6e416fa91b3eebb144b2bd";
+    public static final String app_key= Configuration.app_key;
     public static String detect(String url){
         HttpClient httpclient = HttpClients.createDefault();
 
